@@ -1,33 +1,130 @@
-.App {
+body,
+html {
+  background-color: #20262e;
+  color: #ffffff;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  min-height: 100vh;
+}
+header {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 0;
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sandbox {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: nowrap;
+  font-family: "SF Mono", "Monaco", "Andale Mono", "Lucida Console", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  font-size: 12px;
 }
-
-.App-link {
-  color: #61dafb;
+.sandbox > div {
+  border: 1px solid #2d333b;
+  flex-grow: 2;
+  padding: 10px 20px;
+  width: 33%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sandbox > :first-child {
+  text-align: center;
+}
+.status {
+  margin-bottom: 10px;
+}
+.loading {
+  text-align: center;
+  padding: 45px 0;
+}
+button {
+  border: none;
+  margin-bottom: 40px;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 10px 40px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #ffffff;
+  border-radius: 5px;
+}
+button:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+button:hover {
+  top: 2px;
+}
+button:active {
+  top: 6px;
+}
+button.red {
+  background: #cb4e4e;
+  box-shadow: 0 6px #ab3c3c;
+}
+button.red:hover {
+  box-shadow: 0 4px #ab3c3c;
+}
+button.red:active {
+  box-shadow: 0 0 #ab3c3c;
+}
+button.green {
+  background: #17aa56;
+  box-shadow: 0 6px #119e4d;
+}
+button.green:hover {
+  box-shadow: 0 4px #119e4d;
+}
+button.green:active {
+  box-shadow: 0 0 #119e4d;
+}
+button.blue {
+  background: #5cbcf6;
+  box-shadow: 0 6px #49a7df;
+}
+button.blue:hover {
+  box-shadow: 0 4px #49a7df;
+}
+button.blue:active {
+  box-shadow: 0 0 #49a7df;
+}
+button.purple {
+  background: #823aa0;
+  box-shadow: 0 6px #5e2a74;
+}
+button.purple:hover {
+  box-shadow: 0 4px #5e2a74;
+}
+button.purple:active {
+  box-shadow: 0 0 #5e2a74;
+}
+.error {
+  color: #ffa07a;
+}
+.success {
+  color: #a6d14e;
+}
+.api {
+  margin-bottom: 5px;
+}
+.api.get {
+  color: #0ca4ad;
+}
+.api.post {
+  color: #a6d14e;
+}
+.custom-json-pretty {
+  background: transparent !important;
+}
+.data > :first-child {
+  margin-bottom: 10px;
 }
