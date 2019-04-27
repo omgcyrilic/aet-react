@@ -1,5 +1,1 @@
-export const ACCESS_TOKEN = 'EAAINQQbe2W4BAJ8fcYhbHZBLHP9xmTXfgkmMPg8e19CCMxnhnkQDuyX3b8v0CmBQO8MdjPr16M0WcHuaFHO8GYKbN0s21e5zwE25gZCook3o5r1mQXCjs3bThmJgnaT8gyPQAJlq9v3RZB7x9ZA8XALwlZBXPD0A5aGOIwNZAz1SeuyCIDFZBcf';
-export const AD_ACCOUNT_ID = 'act_283190325716996';
-export const API_VERSION = 'v3.2';
-export const APP_ID = '2193610457526321';
-export const APP_SECRET = '49aceb4a490154ab38a135a2e22dcfe1';
+// secret file!
